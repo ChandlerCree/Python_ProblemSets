@@ -2,6 +2,14 @@
 print("\nPS3 Question 2 (David Chandler Cree)")
 
 def validate(ccn):
+    """
+    Validates whether or not a credit card is valid. First reverses the credit
+    card number, then takes the odd-indexed digits and doubles their values. 
+    If the values doubled are greater than 10 then it takes the sum of the 2 
+    digits. Then sums the whole modified array and if the modulo of that summed
+    array is 0 it deems the credit card number valid.
+    :param ccn: An array of the 4, 4 digit sections of the credit card
+    """
     reverse_ccn = ccn[::-1]
     print(f"The reversed credit card number is: {reverse_ccn}")
 
@@ -40,10 +48,6 @@ def validate(ccn):
         print("This credit card number unfortunately is invalid.")
 
 
-
-
-
-
 if __name__ == "__main__":
 
     credit_card_number = []
@@ -59,3 +63,7 @@ if __name__ == "__main__":
     print(f"The credit card number you entered is: {credit_card_number}")
 
     validate(" ".join(credit_card_number))
+
+    help(validate)
+
+    
