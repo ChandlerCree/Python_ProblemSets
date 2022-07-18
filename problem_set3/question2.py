@@ -1,5 +1,5 @@
 
-print("\nPS3 Question 1 (David Chandler Cree)")
+print("\nPS3 Question 2 (David Chandler Cree)")
 
 def validate(ccn):
     reverse_ccn = ccn[::-1]
