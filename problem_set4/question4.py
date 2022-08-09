@@ -12,5 +12,7 @@ def unique_paths(m, n):
     return solve(0, 0)
 
 if __name__ == "__main__":
-    paths = unique_paths(6, 3)
+    m = int(input("Please enter a value for m: "))
+    n = int(input("Please enter a value for n: "))
+    paths = unique_paths(m, n)
     print(f"Number of paths = {paths}.")
